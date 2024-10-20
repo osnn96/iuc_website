@@ -153,16 +153,23 @@ footer {
 }
 
 .team-images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping of team member images */
-    margin: 20px 0;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Center the images */
 }
 
 .team-member-image {
-    width: 400px; /* Set a specific width for team member images */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px;
-    border-radius: 10px; /* Optional: rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+    width: 100%; /* Makes the image take up the full width of its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    max-width: 150px; /* Sets a maximum width for larger screens */
+    margin: 10px; /* Adds some spacing around images */
 }
+
+/* Additional styles for smaller screens */
+@media (max-width: 600px) {
+    .team-member-image {
+        max-width: 100%; /* Makes images fill their containers on small screens */
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+}
+
