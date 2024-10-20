@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Light background */
+    background-color: #f4f4f4; /* Light background for the body */
 }
 
 nav {
@@ -43,10 +43,12 @@ nav .logo {
 }
 
 header {
-    color: white; /* White text */
+    background-color: #ff6600; /* Set to orange */
+    color: white; /* Keep text white for contrast */
     text-align: center;
     padding: 100px 20px;
 }
+
 
 .logo-container {
     text-align: center;
@@ -84,8 +86,8 @@ button:hover {
 .events-section {
     padding: 40px 20px;
     text-align: center;
-    background-color: #ffffff; /* White background */
-    color: #333333; /* Dark gray text */
+    background-color: #ff6600; /* Orange background for sections */
+    color: #ffffff; /* White text for better visibility */
 }
 
 .team-container {
@@ -127,4 +129,40 @@ footer {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+}
+
+.showcase-section {
+    display: flex;
+    justify-content: space-around; /* Space between the sections */
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.prototype-section, .team-section {
+    width: 45%; /* Adjust width to control the layout */
+    text-align: center;
+}
+
+.prototype-image img {
+    width: 100%; /* Responsive width for the car image */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Maximum width to avoid overflow */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+.team-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping of team member images */
+    margin: 20px 0;
+}
+
+.team-member-image {
+    width: 400px; /* Set a specific width for team member images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px;
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
 }

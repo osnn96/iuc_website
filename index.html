@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header style="background: url('images/header-image.jpg') no-repeat center center/cover;">
-        <div class="logo-container">
-            <img src="assets/logo.jpg" alt="IUCRacing Logo" class="team-logo">
-        </div>
-        <h1>Welcome to IUCRacing</h1>
-        <p>Join us in our journey to the top of Formula Student!</p>
-        <button>Join Us</button>
-    </header>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to CSS file -->
+    <title>IUCRacing</title>
+</head>
 <body>
     <nav>
         <div class="logo">IUCRacing</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#prototype">Prototype</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header style="background: url('images/header-image.jpg') no-repeat center center/cover;">
+    <header style="background-color: #ff6600;">
+        <div class="logo-container">
+            <img src="assets/logo.jpg" alt="IUCRacing Logo" class="team-logo"> <!-- Link to logo image -->
+        </div>
         <h1>Welcome to IUCRacing</h1>
         <p>Join us in our journey to the top of Formula Student!</p>
         <button>Join Us</button>
@@ -31,24 +33,23 @@
         <p>We are a team dedicated to excellence in motorsport engineering and competition.</p>
     </section>
 
-    <section id="team" class="team-container">
-        <h2>Meet the Team</h2>
-        <div class="team-member">
-            <img src="images/member1.jpg" alt="Team Member 1">
-            <h3>John Doe</h3>
-            <p>Driver</p>
+    <section class="showcase-section">
+        <div class="prototype-section">
+            <h2>Our Prototype Car</h2>
+            <div class="prototype-image">
+                <img src="assets/car.jpg" alt="Prototype Car" class="car-image"> <!-- Link to prototype car image -->
+            </div>
+            <p>Check out our latest prototype car designed for Formula Student competitions!</p>
         </div>
-        <div class="team-member">
-            <img src="images/member2.jpg" alt="Team Member 2">
-            <h3>Jane Smith</h3>
-            <p>Engineer</p>
+
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-images">
+                <img src="assets/team.jpg" alt="Team Member 1" class="team-member-image"> <!-- Link to team member images -->
+                <!-- Add more team member images as needed -->
+            </div>
+            <p>Meet the dedicated members of our team who make it all happen!</p>
         </div>
-        <div class="team-member">
-            <img src="images/member3.jpg" alt="Team Member 3">
-            <h3>Alex Brown</h3>
-            <p>Designer</p>
-        </div>
-        <!-- Add more team members as needed -->
     </section>
 
     <section id="events" class="events-section">
@@ -66,5 +67,6 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="js/script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
