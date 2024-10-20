@@ -1,79 +1,114 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-h1, h2 {
-    text-align: center;
-    color: #333;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-p {
-    text-align: center;
-    color: #555;
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-/* Header Styles */
-header {
-    background-color: #333;
-    padding: 1em 0;
-    color: #fff;
-}
-
-header nav ul {
+.nav-links {
     list-style: none;
-    text-align: center;
+    display: flex;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+.nav-links li {
+    margin-left: 20px;
 }
 
-header nav ul li a {
-    color: #fff;
+.nav-links a {
+    color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Hero Section */
-.hero {
-    background-color: #444;
-    color: #fff;
-    padding: 50px 0;
+.nav-links a:hover {
+    color: #d3d3d3;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background: url('images/header-image.jpg') no-repeat center center/cover;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.about-section,
+.events-section {
+    padding: 40px 20px;
     text-align: center;
 }
 
-.hero img {
-    width: 60%;
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 0 30%; /* Adjust as necessary */
+}
+
+.team-member img {
+    max-width: 100%;
     height: auto;
-}
-
-/* Section Styles */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.team, .gallery, .contact {
-    padding: 50px 0;
-}
-
-.team img, .gallery img {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    height: auto;
+    border-radius: 50%;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #007bff;
+    color: white;
     text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
