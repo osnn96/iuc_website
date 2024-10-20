@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 1em 0;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #444;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero img {
+    width: 60%;
+    height: auto;
+}
+
+/* Section Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.team, .gallery, .contact {
+    padding: 50px 0;
+}
+
+.team img, .gallery img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
