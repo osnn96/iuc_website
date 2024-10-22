@@ -1,175 +1,87 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Light background for the body */
+    background-color: #f0f0f0;
 }
 
-nav {
+.header {
+    background-color: #a38b1c;
+    color: white;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #003366; /* Dark blue */
+    justify-content: space-between;
+}
+
+.header img {
+    width: 100px;
+}
+
+nav a {
     color: white;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: white;
+    margin: 0 15px;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #d3d3d3; /* Light gray on hover */
-}
-
-header {
-    background-color: #ff6600; /* Set to orange */
-    color: white; /* Keep text white for contrast */
-    text-align: center;
-    padding: 100px 20px;
-}
-
-
-.logo-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.team-logo {
-    max-width: 200px; /* Adjust logo size */
-    height: auto;
-}
-
-header h1 {
-    font-size: 2.5em;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-button {
-    background-color: #0056b3; /* Button color */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #004494; /* Darker blue on hover */
-}
-
-.about-section,
-.events-section {
+.section {
     padding: 40px 20px;
-    text-align: center;
-    background-color: #ff6600; /* Orange background for sections */
-    color: #ffffff; /* White text for better visibility */
+    background-color: #2c4b7a;
+    color: white;
 }
 
-.team-container {
+.left-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 0;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.team-member {
-    background-color: #f9f9f9; /* Light gray for team member cards */
+.image-left {
+    width: 40%;
+    max-width: 300px;
+    margin-right: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+}
+
+.text-right {
+    width: 60%;
+}
+
+.orange-bg {
+    background-color: #a38b1c;
     padding: 20px;
     text-align: center;
-    flex: 1 0 30%; /* Adjust as necessary */
-    transition: box-shadow 0.3s ease; /* Smooth hover effect */
-}
-
-.team-member img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.team-member:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-footer {
-    background-color: #003366; /* Dark blue */
     color: white;
-    text-align: center;
-    padding: 20px 0;
 }
 
-.social-media a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.showcase-section {
+.side-by-side {
     display: flex;
-    justify-content: space-around; /* Space between the sections */
-    padding: 40px 20px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    background-color: #f4f4f4; /* Light background for contrast */
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 40px auto;
 }
 
-.prototype-section, .team-section {
-    width: 45%; /* Adjust width to control the layout */
+.image-text-container {
     text-align: center;
+    max-width: 400px;
 }
 
-.prototype-image img {
-    width: 100%; /* Responsive width for the car image */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 400px; /* Maximum width to avoid overflow */
-    border-radius: 10px; /* Optional: rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+.side-image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-.team-images {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    justify-content: center; /* Center the images */
+.footer {
+    background-color: #a38b1c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 
-.team-member-image {
-    width: 100%; /* Makes the image take up the full width of its container */
-    height: auto; /* Maintains the aspect ratio of the image */
-    max-width: 150px; /* Sets a maximum width for larger screens */
-    margin: 10px; /* Adds some spacing around images */
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
 }
-
-/* Additional styles for smaller screens */
-@media (max-width: 600px) {
-    .team-member-image {
-        max-width: 100%; /* Makes images fill their containers on small screens */
-        margin: 5px; /* Adjust margin for smaller screens */
-    }
-}
-
