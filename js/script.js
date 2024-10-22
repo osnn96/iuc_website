@@ -1,17 +1,14 @@
-// js/script.js
-// Smooth scrolling
-const links = document.querySelectorAll('.nav-links a');
-
-links.forEach(link => {
-    link.addEventListener('click', function (e) {
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault(); // Prevent default anchor click behavior
-        const targetId = this.getAttribute('href'); // Get the href attribute of the clicked link
-        const targetElement = document.querySelector(targetId); // Get the target element
 
-        // Scroll to the target element smoothly
-        targetElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+        const targetId = this.getAttribute('href'); // Get the target section ID
+        const targetSection = document.querySelector(targetId); // Find the target section
+
+        // Scroll to the target section smoothly
+        targetSection.scrollIntoView({
+            behavior: 'smooth', // Smooth scroll
+            block: 'start' // Align to the start of the section
         });
     });
 });
